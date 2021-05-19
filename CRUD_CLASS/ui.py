@@ -2,7 +2,16 @@ from tkinter import *
 from Insert_into_table import Create
 
 
+##############function#############
+def register():
+    name = sv_name.get()
+    family = sv_family.get()
+    age = sv_age.get()
+    email = sv_email.get()
+    Create(name, family, age, email).do_create()
 
+
+###################################
 root =Tk()
 l1 = Label(root, text="Name")
 l1.grid(column=0, row=0)
@@ -28,7 +37,7 @@ sv_email = StringVar()
 e3 = Entry(root, textvariable=sv_email)
 e3.grid(column=1, row=3)
 
-b1 = Button(root, text="Register")
+b1 = Button(root, text="Register", command=register)
 b1.grid(column=0, row=4, columnspan=2, sticky='we')
 
 root.mainloop()
