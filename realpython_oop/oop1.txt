@@ -1,0 +1,47 @@
+Object-oriented Programming, or OOP for short, is a programming paradigm 
+which provides a means of structuring programs so that properties and 
+behaviors are bundled into individual objects.
+*What Is Object-Oriented Programming in Python?
+Object-oriented programming is a programming paradigm that provides a means 
+of structuring programs so that properties and behaviors are bundled into 
+individual objects.
+For instance, an object could represent a person with properties like a name, 
+age, and address and behaviors such as walking, talking, breathing, and running.
+Or it could represent an email with properties like a recipient list, subject, 
+and body and behaviors like adding attachments and sending. 
+Put another way, object-oriented programming is an approach for modeling concrete, 
+real-world things, like cars, as well as relations between things, like companies 
+and employees, students and teachers, and so on. 
+OOP models real-world entities as software objects that have some data associated 
+with them and can perform certain functions.
+OOP models real-world entities as software objects that have some data associated 
+with them and can perform certain functions.
+The key takeaway is that objects are at the center of object-oriented programming 
+in Python, not only representing the data, as in procedural programming, but in 
+the overall structure of the program as well.
+
+*Define a Class in Python
+Primitive data structures—like numbers, strings, and lists—are designed to represent 
+simple pieces of information, such as the cost of an apple, the name of a poem, or 
+your favorite colors, respectively. What if you want to represent something more 
+complex?
+For example, let’s say you want to track employees in an organization. You need to 
+store some basic information about each employee, such as their name, age, position, 
+and the year they started working.
+
+One way to do this is to represent each employee as a list:
+
+kirk = ["James Kirk", 34, "Captain", 2265]
+spock = ["Spock", 35, "Science Officer", 2254]
+mccoy = ["Leonard McCoy", "Chief Medical Officer", 2266]
+
+There are a number of issues with this approach.
+
+* First, it can make larger code files more difficult to manage. If you reference 
+kirk[0] several lines away from where the kirk list is declared, will you remember 
+that the element with index 0 is the employee’s name? 
+* Second, it can introduce errors if not every employee has the same number of elements 
+in the list. In the mccoy list above, the age is missing, so mccoy[1] will return 
+"Chief Medical Officer" instead of Dr. McCoy’s age.
+A great way to make this type of code more manageable and more maintainable 
+is to use classes.
