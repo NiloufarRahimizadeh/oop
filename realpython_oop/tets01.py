@@ -35,6 +35,7 @@ class Dog:
     def roll_over(self):
         print(f"{self.name} rolled over!")
 
+
 # The __init__() Method
 # A function that’s part of a class is a method.
 # The __init__() method at w is a special method 
@@ -51,3 +52,28 @@ class Dog:
 # to the instance itself; it gives the individual 
 # instance access to the attributes and methods in 
 # the class.
+
+# When we make an instance of Dog, Python will call 
+# the __init__() method from the Dog class. We’ll 
+# pass Dog()a name and an age as arguments; self is 
+# passed automatically, so we don’t need to pass it.
+
+# Whenever we want to make an instance from the Dog 
+# class, we’ll provide values for only the last two 
+# parameters, name and age.
+
+# The two variables defined at each have the prefix 
+# self. Any variable prefixed with self is available 
+# to every method in the class, and we’ll also be able 
+# to access these variables through any instance created 
+# from the class.
+# Variables that are accessible through instances like 
+# this are called attributes.
+# The instances we create later will have access 
+# to these methods (sit and roll_overed). In other words, 
+# they’ll be able to sit and roll over.
+# if this class were part of an actual computer game, 
+# these methods would contain code to make an animated 
+# dog sit and roll over. If this class was written to 
+# control a robot, these methods would direct movements 
+# that cause a robotic dog to sit and roll over.
