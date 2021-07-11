@@ -47,6 +47,14 @@ class Battery:
     def describe_battery(self):
         print(f"This car has a {self.battery_size}-KWh battery.")
 
+    def get_range(self):
+        if self.battery_size ==75:
+            range = 260
+        elif self.battery_size ==100:
+            range =316
+
+        print(f"This car can go about {range} miles on a full charge.")
+
 
 class ElectricalCar(Car):
 
@@ -56,3 +64,7 @@ class ElectricalCar(Car):
 
 my_tesla = ElectricalCar('tesla', 'model s', 2019)
 my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
+# It then reports this value. When we want to use this
+# method, we again have to call it through the car’s 
+# battery attribute
